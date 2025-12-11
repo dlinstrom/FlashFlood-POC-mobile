@@ -718,7 +718,7 @@
             </div>
             <br>
             <div class="config-grid">
-                <input type="text" id="broker" placeholder="Broker URL" value="test.mosquitto.org">
+                <input type="text" id="broker" placeholder="Broker URL" value="broker.emqx.io">
                 <input type="text" id="port" placeholder="Port" value="8081">
                 <input type="text" id="topic" placeholder="Topic" value="msh/US/2/json/#">
                 <select id="maxPoints">
@@ -1122,7 +1122,7 @@
                 console.error('Connection error:', e);
                 let errorMsg = e.message;
                 if (errorMsg.includes('WebSocket') && errorMsg.includes('insecure')) {
-                    errorMsg = 'Security Error: Please use port 8081 for test.mosquitto.org or try HiveMQ preset';
+                    errorMsg = 'Security Error: Please use port 8081 for broker.emqx.io or try HiveMQ preset';
                 }
                 showError(errorMsg);
             }

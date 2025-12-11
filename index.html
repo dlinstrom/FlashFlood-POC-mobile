@@ -964,17 +964,17 @@
                 mosquitto: { 
                     broker: 'broker.emqx.io',
                     port: '8084',
-                    topic: 'msh/US/2/json'  // Listen to ALL messages
+                    topic: 'msh/US/2/json/#'  // Listen to ALL messages
                 },
                 hivemq: { 
                     broker: 'broker.hivemq.com', 
                     port: '8884',  // WSS port
-                    topic: 'msh/US/2/json'
+                    topic: 'msh/US/2/json/#'
                 },
                 emqx: { 
                     broker: 'broker.emqx.io', 
                     port: '8084',  // WSS port
-                    topic: 'msh/US/2/json'
+                    topic: 'msh/US/2/json/#'
                 }
             };
             
